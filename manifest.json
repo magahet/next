@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "Next: Click next, continue, etc.",
+  "short_name": "Next",
+  "description": "Click next, continue, etc.",
+  "version": "1.1",
+
+  "browser_action": {
+    "default_icon": "icon48.png"
+  },
+
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.udacity.com/*"],
+      "js": ["next.js"]
+    }
+  ]
+
+}
