@@ -7,8 +7,12 @@ matchAddedNodes = mutation => mutation.addedNodes.forEach(matchAndClick);
 
 // Try matching a node for the "skip" button and click on positive match.
 matchAndClick = node => {
-  if (node.nodeType === 1 && node.matches('[class^="_auto-advance-overlay--button"'))
-    click(node)
+  for (const a of node.querySelectorAll("a")) {
+        if (a.textContent.includes("Play Next")) {
+                console.log(a.textContent)
+                click(a)
+        }
+  }
 }
 // Click the node.
 click = node => node.click();
