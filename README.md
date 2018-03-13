@@ -1,4 +1,4 @@
 Next
 ====
 
-Presses next, continue, etc. on websites.
+Presses "Play Next" on classroom.udacity.com
