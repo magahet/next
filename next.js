@@ -7,15 +7,15 @@ matchAddedNodes = mutation => mutation.addedNodes.forEach(matchAndClick);
 
 // Try matching a node for the "skip" button and click on positive match.
 matchAndClick = node => {
+  if (typeof node.querySelectorAll !== 'function') {
+    return
+  }
   for (const a of node.querySelectorAll("a")) {
-        if (a.textContent.includes("Play Next")) {
-                console.log(a.textContent)
-                click(a)
-        }
+    if (a.textContent.includes("Play Next")) {
+      a.click();
+    }
   }
 }
-// Click the node.
-click = node => node.click();
 
 // Observe the DOM for changes.
 obs.observe(document.documentElement, { childList: true, subtree: true });
