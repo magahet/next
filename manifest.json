@@ -11,7 +11,10 @@
 
   "content_scripts": [
     {
-      "matches": ["https://classroom.udacity.com/*"],
+      "matches": [
+          "https://classroom.udacity.com/*",
+          "https://www.udemy.com/*"
+      ],
       "js": ["next.js"]
     }
   ]
