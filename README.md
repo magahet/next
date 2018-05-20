@@ -1,7 +1,7 @@
 Next
 ====
 
-Presses "Play Next" on classroom.udacity.com
+Presses "Play Next" on Udacity and Udemy
 
 
 To install follow this:
