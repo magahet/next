@@ -21,12 +21,12 @@ const matchAndClick = node => {
   }
 
   // udemy next button
-  nextButton = node.querySelector('button[data-purpose="go-to-next-button"]')
-  if (nextButton && !isHidden(nextButton) ) {
-      console.log('Clicked Next')
-      nextButton.click()
-      clicked = true
-      setTimeout(() => clicked = false, 10000)
+  nextButton = node.querySelector('div[data-purpose="go-to-next-button"]')
+  if (nextButton && !isHidden(nextButton)) {
+    console.log('Clicked Next')
+    nextButton.click()
+    clicked = true
+    setTimeout(() => clicked = false, 10000)
   }
 
   // udacity next button
